@@ -1,0 +1,52 @@
+@font-face {
+  font-family: Chivo;
+  src: url(../Chivo/Chivo-Regular.ttf);
+}
+@font-face {
+  font-family: ChivoLight;
+  src: url(../Chivo/Chivo-Light.ttf);
+}
+
+$primaryButton-Color : #1D3C56;
+$primaryButton-fontSize : 14px;
+$primaryButton-colorOnHover : #0b2a44;
+
+$secondaryButton-fontSize : 14px;
+$secondaryButtonHeight : 26px;
+$secondaryButtonColor : $primaryButton-Color;
+$secondaryButtonColorOnHover : skyblue;
+
+.rd-button , .primary{
+  background-color: $primaryButton-Color;
+  color: white;
+  border: none;
+  
+  font-size: $primaryButton-fontSize;
+  font-family: ChivoLight;
+  &:focus {
+    background: $primaryButton-colorOnHover;
+  }
+}
+
+.secondary {
+  transition: 0.3s;
+  height: $secondaryButtonHeight;
+  color: $secondaryButtonColor;
+  border: 1px solid $primaryButton-Color;
+  font-size: $secondaryButton-fontSize;
+  font-family: Chivo;
+  background-color: white;
+  border-radius: 2px;
+  text-align: center;
+  padding: 3px 11px;
+  cursor: pointer;
+  &:hover{
+  border: solid 1px skyblue;
+  color: skyblue; 
+  }
+  &:focus{
+  border: solid 1px skyblue;
+  color: skyblue;
+  box-shadow: 1px 1px 4px 2px rgb(191, 225, 238);
+  }
+}
