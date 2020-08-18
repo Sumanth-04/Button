@@ -7,9 +7,8 @@ class App extends React.Component {
       <div className="App">
         <br />
         <div>
-          <Button label="Primary Button"  /> {" "}
-          <Button className='secondary' label="Secondary Button"  />{" "}
-          <Button className='secondary' label="Secondary Hover"  />
+          <Button type='primary' label="Primary Button" /> {" "}
+          <Button type='secondary' label="Secondary Button"  />{" "}
         </div>
       </div>
     );

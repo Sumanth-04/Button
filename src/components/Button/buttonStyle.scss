@@ -14,6 +14,7 @@ $primaryButton-colorOnHover : #0b2a44;
 $secondaryButton-fontSize : 14px;
 $secondaryButtonHeight : 26px;
 $secondaryButtonColor : $primaryButton-Color;
+$secondaryButtonBorderColor : $primaryButton-Color;
 $secondaryButtonColorOnHover : skyblue;
 
 .rd-button , .primary{
@@ -32,7 +33,7 @@ $secondaryButtonColorOnHover : skyblue;
   transition: 0.3s;
   height: $secondaryButtonHeight;
   color: $secondaryButtonColor;
-  border: 1px solid $primaryButton-Color;
+  border: 1px solid $secondaryButtonBorderColor;
   font-size: $secondaryButton-fontSize;
   font-family: Chivo;
   background-color: white;
@@ -45,8 +46,9 @@ $secondaryButtonColorOnHover : skyblue;
   color: skyblue; 
   }
   &:focus{
+  background-color: white;
   border: solid 1px skyblue;
   color: skyblue;
-  box-shadow: 1px 1px 4px 2px rgb(191, 225, 238);
+  box-shadow: 1px 1px 3px 2px rgb(191, 225, 238);
   }
 }

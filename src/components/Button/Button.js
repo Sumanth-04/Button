@@ -8,6 +8,7 @@ class Button extends Component {
     label: PropTypes.string.isRequired,
     buttonStyles: PropTypes.object,
     className: PropTypes.string,
+    type:PropTypes.string,
   };
 
   constructor(props) {
@@ -23,7 +24,7 @@ class Button extends Component {
     } = this;
     return (
       <button
-        className={`rd-button  ${this.props.className}`}
+        className={`rd-button  ${this.props.className} ${this.props.type}`}
         style={{ ...this.props.buttonStyles }}
         {...this.props}
       >
@@ -34,7 +35,7 @@ class Button extends Component {
 }
 
 Button.defaultProps = {
-  className : 'primary'
+  type : 'primary'
 }
 
 export default Button;
